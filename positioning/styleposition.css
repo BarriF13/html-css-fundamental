@@ -1,19 +1,42 @@
+body{
+  height: 4000px;
+}
 .box{
   width: 100px;
   height: 100px;
 }
+.container{
+  position: relative; /*Parent should position relative*/
+  width:500px;
+  height: 500px;
+  background: darkgrey;
+}
 #box-1{
+  position: relative;
+  top:50px;
+  left:50px;
   background: red;
+  z-index: 1; /*the higher the z index the closer to the viewer layer wise*/
 }
 #box-2{
+  position: absolute; /*it is a child of container so position should be absolute*/
+  top:100px;
+  left:100px;
   background: yellow;
 }
 #box-3{
+  position: absolute; /*it is a child of container so position should be absolute*/
+  right:100px;
+  bottom:100px;
   background: pink;
 }
 #box-4{
+   position:fixed;/* keeps the element fix in one position and scrolling wont effect it */ 
   background: lightgreen;
 }
 #box-5{
+  position: sticky; /* use for menus normally sticks*/
+  top:0;
   background: lightblue;
+  z-index: -1;
 }
