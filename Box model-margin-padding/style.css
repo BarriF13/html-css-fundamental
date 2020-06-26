@@ -16,8 +16,9 @@
 }
 .box p {
   /* Text Align*/
-  text-align: left;
+  text-align: right;
   text-align: justify;
+
 }
  #box-2{
    float: left;
