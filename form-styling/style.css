@@ -1,6 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 *{
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 body{
   background: rgb(60, 66, 117);
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+.container{
+  max-width: 500px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 25px;
+ 
+}
+h1 {
+  font-size: 36px;
+  text-align: center;
+  color: rgb(119, 116, 116);
+}
+p {
+  font-size: 24px;
+  text-align: center;
+  color: rgb(82, 81, 81);
+}
+.bottom-text {
+  font-size: 14px;
+  text-align: center;
+
+}
+.form-wrap {
+  width: 100%;
+  background: white;
+  padding:30px;
+  border-radius: 5px;
+}
+.form-wrap .form-group{
+  margin : 10px 0;
+  color: rgb(110, 110, 110);
+
+}
+.form-wrap .form-group label{
+  display: block;
+  margin-bottom: 5px;
+}
+.form-wrap .form-group input{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  border-radius: 5px;
+  border: 1px solid  lightgrey;
+
+}
+.form-wrap button{
+  width: 100%;
+  margin: 20px auto;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: rgb(236, 241, 236);
+  background: rgb(113, 204, 161);
+}
+.form-wrap button:hover{
+  background: rgb(113, 121, 117);
+}
+footer p{
+  font-size: 14px;
+  color: white;
+}
+footer a{
+  margin-left: 5px;
+  font-size: 14px;
+  color: rgb(113, 230, 119);
 }
