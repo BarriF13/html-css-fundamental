@@ -1,3 +1,12 @@
 h1{
-  display: none;
+  /* display: none; makes it disapeare and not even leave a space but visibility leave the space empty*/
+  /* visibility: hidden; */
+  color: blue;
+}
+.hello{
+  color: blueviolet; 
+  /* targeting class will remove css on the element unless we put !important*/
+
+  /* margin has negative value padding don't */
+  margin-top: -20px;
 }
