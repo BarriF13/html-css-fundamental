@@ -3,9 +3,9 @@
 
   background: rgb(250, 173, 173);
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   /* Align items horizontally*/
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   /* Options:
     flex-start
     flex-end
@@ -39,4 +39,15 @@
   /* width: 300px; */
   flex-basis: 200px;
 }
-
+.item-1{
+  order: 3;
+}
+.item-2 {
+  /*Align single item vertical*/
+  align-self: center;
+  order: 2;
+  
+}
+.item-3{
+  order: 1;
+}
