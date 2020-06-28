@@ -3,7 +3,7 @@
 
   background: rgb(250, 173, 173);
   display: flex;
-
+  flex-wrap: wrap;
   /* Align items horizontally*/
   justify-content: space-evenly;
   /* Options:
@@ -24,6 +24,9 @@
   align-items: center;
   align-items: stretch; */
   align-items: baseline;
+
+  /*Align items vertical where extra space*/
+  align-content: space-between;
   
 }
 
