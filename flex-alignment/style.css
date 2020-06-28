@@ -1,0 +1,39 @@
+
+#container {
+
+  background: rgb(250, 173, 173);
+  display: flex;
+
+  /* Align items horizontally*/
+  justify-content: space-evenly;
+  /* Options:
+    flex-start
+    flex-end
+    center
+    space-between
+    space-around
+    space-evenly
+  
+  */
+  height: 600px;
+
+  /* Align items vertically ---there must be a height*/
+
+  /* align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: stretch; */
+  align-items: baseline;
+  
+}
+
+.item {
+  background: #f4f4f4;
+  border: #ccc solid 1px;
+  text-align:center;
+  padding: 1rem;
+  margin: 0.5rem;
+  /* width: 300px; */
+  flex-basis: 200px;
+}
+
