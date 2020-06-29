@@ -18,7 +18,24 @@ header {
   align-items: center;
   text-align: center;
   height: 100vh;
+
 }
+/* set the transparent background for header */
+header:before{
+  content: '';
+  background: url(https://source.unsplash.com/collection/190727/1600x900
+  ) no-repeat center center/cover;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* push the pic back */
+  z-index: -1;
+}
+
+
 header > h1{
   font-size: 3rem;
   margin: 1rem;
