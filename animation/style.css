@@ -5,16 +5,27 @@
   background-color: thistle;
   width: 200px;
   height: 200px;
-
+  position: relative;
   /*animation name*/
-  animation-name: animate1;
-  animation-duration: 2s;
+  /* animation-name: animate1;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out; */
+
+  animation: animate1 3s ease-in-out 1s 2 forwards;
+  
  }
  @keyframes animate1{
    from{
      width:200px;
+     top:0;
    }
    to {
+     top: 300px;
      width: 500px;
+     background-color: rgb(252, 255, 71);
    }
  }
