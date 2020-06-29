@@ -7,9 +7,11 @@
     /*We make vars in root scope so we can use it anywhere in style sheet--use for primary and secondary color and common use color  */
     :root {
       --max-width:1100px;
-      --primary-color: steelblue;
+      --primary-color: rgb(80, 123, 241);
       --secondary-color:skyblue;
       --light-color: #dddfdf;
+      --box-1-width:1;
+      --box-2-width:2;
     }
     *{
       margin: 0;
@@ -34,6 +36,19 @@
       max-width: var(--max-width);
 
     }
+    .box {
+      background: var(--primary-color);
+      border-bottom: 5px var(--secondary-color) dotted;
+      color: white;
+      padding: 1rem;
+      margin: 1rem;
+    }
+.box-1 {
+  flex: var(--box-1-width);
+}
+.box-2 {
+  flex: var(--box-2-width);
+}
   </style>
   <title>Css variable</title>
 </head>
