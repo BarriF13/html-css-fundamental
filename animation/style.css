@@ -1,0 +1,20 @@
+ body{
+   background-color: teal;
+ }
+ .box {
+  background-color: thistle;
+  width: 200px;
+  height: 200px;
+
+  /*animation name*/
+  animation-name: animate1;
+  animation-duration: 2s;
+ }
+ @keyframes animate1{
+   from{
+     width:200px;
+   }
+   to {
+     width: 500px;
+   }
+ }
