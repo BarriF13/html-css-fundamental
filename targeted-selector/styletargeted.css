@@ -1,0 +1,22 @@
+/* Direct child of the parent*/
+div > p{
+  background: #888;
+}
+
+/* directly after */
+div + p{
+  background: #ce7add;
+}
+
+/* By attribute*/
+a[target]{
+  background: rgb(233, 48, 48);
+  color:white;
+}
+a[target="_blank"]{
+  background: rgb(121, 14, 14);
+  color:white;
+}
+
+/* specific attribute values*/
+
