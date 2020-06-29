@@ -1,0 +1,35 @@
+li {
+  padding: 0.25rem;
+  margin: 0.25rem;
+  list-style: none;
+}
+/*First child */
+li:first-child {
+  background: red;
+}
+
+/*Last child */
+li:last-child {
+  background: red;
+}
+
+/* Position 3*/
+li:nth-child(3){
+  background: blue;
+}
+
+/* Every 3 -- n is a counter - 0 is the starting point */
+
+li:nth-child(3n+0){
+  background: orange;
+}
+
+/*every 3 after 7*/
+li:nth-child(3n+7){
+  background-color: chartreuse;
+}
+
+/*every odd -- even*/
+li:nth-child(odd){
+  background-color: rgb(149, 153, 161);
+}
