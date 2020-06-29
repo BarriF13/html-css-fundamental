@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    /*We make vars in root scope so we can use it anywhere in style sheet--use for primary and secondary color and common use color  */
+    :root {
+      --max-width:1100px;
+      --primary-color: steelblue;
+      --secondary-color:skyblue;
+      --light-color: #dddfdf;
+    }
     *{
       margin: 0;
       padding: 0;
@@ -11,8 +18,21 @@
     body{
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.4;
-      --light-color: #f4f4f4;
+     
       background: var(--light-color);
+    }
+
+    header {
+      background: var(--primary-color);
+      color: white;
+      text-align: center;
+      border-bottom: 5px var(--secondary-color) solid;
+    }
+    .container {
+      display: flex;
+      margin: auto;
+      max-width: var(--max-width);
+
     }
   </style>
   <title>Css variable</title>
@@ -23,14 +43,17 @@
   </header>
   
   <div class="container">
+
     <div class="box box-1">
       <h3>Head title</h3>
       <p> blab labsd kokol oasdin ask me to go the out ira ndthe </p>
     </div>
+
     <div class="box box-2">
       <h3>Head title</h3>
       <p> blab labsd kokol oasdin ask me to go the out ira ndthe </p>
     </div>
+
   </div>
 
   
